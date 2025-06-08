@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderChat Gaming Universe - Play Paper Games, Star Quest & Super Mario World Online</title>
+    <meta name="description" content="Enter the ultimate gaming universe with Paper Games, Star Quest adventure, and Super Mario World. Experience sci-fi gaming at its finest - completely free!">
+    <meta name="keywords" content="online games, Paper Games, Star Quest, Super Mario World, sci-fi games, free gaming, browser games">
+    <link rel="canonical" href="https://wonderchat.it.com">
+    <meta property="og:title" content="WonderChat Gaming Universe - Sci-Fi Gaming Portal">
+    <meta property="og:description" content="Immerse yourself in futuristic gaming with three incredible online games">
+    <meta property="og:url" content="https://wonderchat.it.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-blue': '#00D4FF',
+                        'neon-purple': '#8B5CF6',
+                        'matrix-green': '#00FF41',
+                        'dark-space': '#0B0B1A',
+                        'deep-purple': '#1E1B4B',
+                        'electric-blue': '#3B82F6',
+                        'plasma-pink': '#EC4899',
+                        'steel-gray': '#374151',
+                        'cyber-gray': '#1F2937'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Exo 2', sans-serif;
+            background: linear-gradient(135deg, #0B0B1A 0%, #1E1B4B 50%, #0B0B1A 100%);
+        }
+        
+        .cyber-title {
+            font-family: 'Orbitron', monospace;
+            background: linear-gradient(45deg, #00D4FF, #8B5CF6, #EC4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+        }
+        
+        .game-frame {
+            border-radius: 15px;
+            box-shadow: 
+                0 0 30px rgba(0, 212, 255, 0.3),
+                0 0 60px rgba(139, 92, 246, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+            background: linear-gradient(145deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        .game-frame:hover {
+            transform: translateY(-10px);
+            box-shadow: 
+                0 0 40px rgba(0, 212, 255, 0.5),
+                0 0 80px rgba(139, 92, 246, 0.3),
+                0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cyber-card {
+            background: linear-gradient(145deg, rgba(31, 41, 55, 0.8), rgba(30, 27, 75, 0.8));
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+        
+        .neon-glow {
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+            border: 1px solid rgba(0, 212, 255, 0.5);
+        }
+        
+        .neon-text {
+            color: #00D4FF;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+        }
+        
+        .matrix-dots {
+            background-image: radial-gradient(circle at 1px 1px, rgba(0, 212, 255, 0.3) 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+        
+        .cyber-button {
+            background: linear-gradient(45deg, #00D4FF, #8B5CF6);
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .cyber-button:hover {
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.8);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen">
+    <!-- Animated Background -->
+    <div class="fixed inset-0 matrix-dots opacity-20"></div>
+    
+    <!-- Header -->
+    <header class="relative z-10 py-6 bg-dark-space/80 backdrop-blur-md border-b border-cyber-blue/20">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center">
+                <div class="cyber-title text-2xl md:text-3xl font-bold">
+                    🚀 WonderChat Universe
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#games" class="neon-text hover:text-plasma-pink transition-colors">Games</a>
+                    <a href="#about" class="neon-text hover:text-plasma-pink transition-colors">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative z-10 py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="cyber-title text-5xl md:text-7xl font-black mb-8">
+                Enter the Gaming Universe
+            </h1>
+            <p class="text-xl md:text-3xl mb-12 text-cyber-blue font-light">
+                Experience three legendary games in one futuristic portal
+            </p>
+            <a href="#games" class="cyber-button inline-block px-10 py-4 rounded-full font-bold text-lg text-dark-space hover:text-white transition-colors">
+                Launch Games
+            </a>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="relative z-10 py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="cyber-title text-4xl md:text-5xl font-bold mb-6">Gaming Arsenal</h2>
+                <p class="text-xl text-cyber-blue max-w-3xl mx-auto">
+                    Three incredible gaming experiences await you in our cyber universe
+                </p>
+            </div>
+
+            <!-- Paper Games -->
+            <div class="mb-20">
+                <div class="cyber-card rounded-3xl p-8 md:p-12">
+                    <h2 class="cyber-title text-3xl md:text-4xl font-bold mb-6">
+                        📄 Paper Games - Creative Universe
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        Dive into the innovative world of Paper Games where creativity meets strategy. This unique gaming platform offers a collection of paper-inspired games that challenge your mind and spark your imagination.
+                    </p>
+                    
+                    <div class="game-frame bg-dark-space/50 rounded-2xl overflow-hidden mb-8">
+                        <iframe 
+                            src="https://www.papergames.io/" 
+                            width="100%" 
+                            height="700" 
+                            frameborder="0"
+                            allowfullscreen
+                            class="w-full"
+                            title="Paper Games">
+                        </iframe>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="cyber-card rounded-xl p-6">
+                            <h3 class="neon-text text-xl font-bold mb-4">🎮 Game Features</h3>
+                            <ul class="text-gray-300 space-y-3">
+                                <li>• Innovative paper-based mechanics</li>
+                                <li>• Multiple game modes</li>
+                                <li>• Creative problem-solving</li>
+                                <li>• Modern gaming experience</li>
+                            </ul>
+                        </div>
+                        <div class="cyber-card rounded-xl p-6">
+                            <h3 class="neon-text text-xl font-bold mb-4">🚀 Why Play</h3>
+                            <ul class="text-gray-300 space-y-3">
+                                <li>• Enhances creative thinking</li>
+                                <li>• Unique artistic design</li>
+                                <li>• All skill levels welcome</li>
+                                <li>• Relaxing gameplay</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Star Quest -->
+            <div class="mb-20">
+                <div class="cyber-card rounded-3xl p-8 md:p-12">
+                    <h2 class="cyber-title text-3xl md:text-4xl font-bold mb-6">
+                        ⭐ Star Quest - Galactic Adventure
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        Embark on an epic intergalactic journey with Star Quest. Navigate through mysterious galaxies, encounter alien civilizations, and uncover the secrets of the universe in this thrilling sci-fi adventure.
+                    </p>
+                    
+                    <div class="game-frame bg-dark-space/50 rounded-2xl overflow-hidden mb-8">
+                        <iframe 
+                            src="https://crazygames-poki.com/embed/star-quest" 
+                            width="100%" 
+                            height="700" 
+                            frameborder="0"
+                            allowfullscreen
+                            class="w-full"
+                            title="Star Quest Game">
+                        </iframe>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="cyber-card rounded-xl p-6">
+                            <h3 class="neon-text text-xl font-bold mb-4">🌌 Adventure Features</h3>
+                            <ul class="text-gray-300 space-y-3">
+                                <li>• Galaxy exploration system</li>
+                                <li>• Alien encounter mechanics</li>
+                                <li>• Strategic resource management</li>
+                                <li>• Stunning space visuals</li>
+                            </ul>
+                        </div>
+                        <div class="cyber-card rounded-xl p-6">
+                            <h3 class="neon-text text-xl font-bold mb-4">🛸 Mission Objectives</h3>
+                            <ul class="text-gray-300 space-y-3">
+                                <li>• Discover new planets</li>
+                                <li>• Complete space missions</li>
+                                <li>• Upgrade your starship</li>
+                                <li>• Unravel cosmic mysteries</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Super Mario World -->
+            <div class="mb-20">
+                <div class="cyber-card rounded-3xl p-8 md:p-12">
+                    <h2 class="cyber-title text-3xl md:text-4xl font-bold mb-6">
+                        🍄 Super Mario World - Legendary Platformer
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        Experience the timeless magic of Super Mario World. Join Mario and Luigi on their incredible adventure through Dinosaur Land, featuring innovative gameplay mechanics and the introduction of Yoshi.
+                    </p>
+                    
+                    <div class="game-frame bg-dark-space/50 rounded-2xl overflow-hidden mb-8">
+                        <iframe 
+                            src="https://crazygames-poki.com/embed/super-mario-world" 
+                            width="100%" 
+                            height="700" 
+                            frameborder="0"
+                            allowfullscreen
+                            class="w-full"
+                            title="Super Mario World Game">
+                        </iframe>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="cyber-card rounded-xl p-6">
+                            <h3 class="neon-text text-xl font-bold mb-4">🎯 Classic Features</h3>
+                            <ul class="text-gray-300 space-y-3">
+                                <li>• Iconic Mario platforming</li>
+                                <li>• Yoshi companion system</li>
+                                <li>• Multiple power-ups</li>
+                                <li>• Secret levels and areas</li>
+                            </ul>
+                        </div>
+                        <div class="cyber-card rounded-xl p-6">
+                            <h3 class="neon-text text-xl font-bold mb-4">🏆 Gaming Legacy</h3>
+                            <ul class="text-gray-300 space-y-3">
+                                <li>• Timeless gameplay</li>
+                                <li>• Memorable music</li>
+                                <li>• Perfect for nostalgia</li>
+                                <li>• All ages welcome</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="relative z-10 py-20 bg-deep-purple/20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="cyber-title text-4xl md:text-5xl font-bold mb-12 text-center">About Our Gaming Universe</h2>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div class="cyber-card rounded-2xl p-8 text-center">
+                        <div class="neon-text text-4xl mb-4">🌌</div>
+                        <h3 class="cyber-title text-xl font-bold mb-4">Infinite Possibilities</h3>
+                        <p class="text-gray-300">
+                            Our gaming universe offers endless entertainment with carefully curated games spanning multiple genres.
+                        </p>
+                    </div>
+                    
+                    <div class="cyber-card rounded-2xl p-8 text-center">
+                        <div class="neon-text text-4xl mb-4">⚡</div>
+                        <h3 class="cyber-title text-xl font-bold mb-4">Instant Access</h3>
+                        <p class="text-gray-300">
+                            No downloads required. Jump straight into action with our browser-based gaming platform.
+                        </p>
+                    </div>
+                    
+                    <div class="cyber-card rounded-2xl p-8 text-center">
+                        <div class="neon-text text-4xl mb-4">🚀</div>
+                        <h3 class="cyber-title text-xl font-bold mb-4">Future-Ready</h3>
+                        <p class="text-gray-300">
+                            Experience gaming with cutting-edge technology and futuristic design.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center cyber-card rounded-3xl p-12">
+                    <h3 class="cyber-title text-3xl font-bold mb-6">Welcome to the Future of Gaming</h3>
+                    <p class="text-xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+                        WonderChat Gaming Universe represents the next evolution in online gaming. We've created a portal where classic games meet futuristic design, where every click launches you into new adventures.
+                    </p>
+                    <p class="text-lg text-cyber-blue">
+                        The future of gaming is here. Are you ready to explore it?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative z-10 bg-dark-space/90 backdrop-blur-md border-t border-cyber-blue/20 py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="cyber-title text-2xl font-bold mb-6">🚀 WonderChat Universe</div>
+                    <p class="text-gray-400">
+                        Your gateway to infinite gaming possibilities in a futuristic digital universe.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="neon-text text-lg font-bold mb-4">Gaming Arsenal</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li><a href="#games" class="hover:text-cyber-blue transition-colors">Paper Games</a></li>
+                        <li><a href="#games" class="hover:text-cyber-blue transition-colors">Star Quest</a></li>
+                        <li><a href="#games" class="hover:text-cyber-blue transition-colors">Super Mario World</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="neon-text text-lg font-bold mb-4">Universe</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li><a href="#about" class="hover:text-cyber-blue transition-colors">About Us</a></li>
+                        <li><a href="#games" class="hover:text-cyber-blue transition-colors">Game Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="neon-text text-lg font-bold mb-4">Connect</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li><a href="#" class="hover:text-cyber-blue transition-colors">Support</a></li>
+                        <li><a href="#" class="hover:text-cyber-blue transition-colors">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-cyber-blue/20 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2024 WonderChat Gaming Universe. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Effects -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.matrix-dots');
+            const speed = scrolled * 0.5;
+            parallax.style.transform = `translateY(${speed}px)`;
+        });
+    </script>
+</body>
+</html> 
