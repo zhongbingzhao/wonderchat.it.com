@@ -6,10 +6,16 @@
     <title>WonderChat Gaming Universe - Play Paper Games, Star Quest & Super Mario World Online</title>
     <meta name="description" content="Enter the ultimate gaming universe with Paper Games, Star Quest adventure, and Super Mario World. Experience sci-fi gaming at its finest - completely free!">
     <meta name="keywords" content="online games, Paper Games, Star Quest, Super Mario World, sci-fi games, free gaming, browser games">
-    <link rel="canonical" href="https://wonderchat.it.com">
+    <link rel="canonical" href="https://www.wonderchat.it.com">
     <meta property="og:title" content="WonderChat Gaming Universe - Sci-Fi Gaming Portal">
     <meta property="og:description" content="Immerse yourself in futuristic gaming with three incredible online games">
-    <meta property="og:url" content="https://wonderchat.it.com">
+    <meta property="og:url" content="https://www.wonderchat.it.com">
+    <meta property="og:image" content="https://www.wonderchat.it.com/preview.jpg">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="WonderChat Gaming">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
     <meta property="og:type" content="website">
     
     <!-- Tailwind CSS -->
@@ -159,15 +165,31 @@
                     </p>
                     
                     <div class="game-frame bg-dark-space/50 rounded-2xl overflow-hidden mb-8">
+                        <!-- 如果iframe不工作，取消下面注释并删除iframe -->
                         <iframe 
-                            src="https://www.papergames.io/" 
+                            src="https://html5games.com/Game/paper-io-2/embed" 
                             width="100%" 
                             height="700" 
                             frameborder="0"
                             allowfullscreen
+                            sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+                            referrerpolicy="no-referrer-when-downgrade"
                             class="w-full"
                             title="Paper Games">
                         </iframe>
+                        
+                        <!-- 备用显示方案（如果iframe不工作就取消注释）
+                        <div class="flex flex-col items-center justify-center h-96 bg-gradient-to-br from-cyber-blue/20 to-neon-purple/20 rounded-2xl">
+                            <div class="text-center">
+                                <div class="text-6xl mb-6">📄</div>
+                                <h3 class="cyber-title text-2xl font-bold mb-4">Paper Games</h3>
+                                <p class="text-gray-300 mb-6 max-w-md">由于浏览器安全限制，请点击下方按钮在新窗口中体验游戏</p>
+                                <a href="https://www.papergames.io/" target="_blank" class="cyber-button inline-block px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transform transition-all">
+                                    🚀 开始游戏
+                                </a>
+                            </div>
+                        </div>
+                        -->
                     </div>
                     
                     <div class="grid md:grid-cols-2 gap-8">
@@ -394,4 +416,4 @@
         });
     </script>
 </body>
-</html> 
+</html>
